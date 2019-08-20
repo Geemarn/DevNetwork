@@ -5,9 +5,9 @@ import jwt_decode from "jwt-decode";
 import { GET_ERRORS, SET_CURRENT_USER } from "./types";
 
 // Register User
-export const registerUser = (userData, history) => dispatch => {
+export const registerUser = (newUser, history) => dispatch => {
   axios
-    .post("/apis/users/register", userData)
+    .post("/apis/users/register", newUser)
     .then(res => history.push("/login"))
     .catch(err =>
       dispatch({
@@ -57,4 +57,5 @@ export const logoutUser = () => dispatch => {
   setAuthToken(false);
   // Set current user to {} which will set isAuthenticated to false
   dispatch(setCurrentUser({}));
+  // window.location.href = "/login";
 };

@@ -110,7 +110,7 @@ router.post(
 );
 
 // @route   GET apis/profile/all
-//@desc     get user profile by handle
+//@desc     get all user profile
 //@access   Public
 router.get("/all", (req, res) => {
   const errors = {};

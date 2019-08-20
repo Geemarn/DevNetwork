@@ -4,7 +4,7 @@ img {
 
 .landing {
   position: relative;
-  background: url('./img/showcase.jpg') no-repeat;
+  background: url("./img/background.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -36,4 +36,65 @@ img {
 
 .form-control::placeholder {
   color: #bbb !important;
+}
+
+.primary-color {
+  color: rgb(163, 98, 13);
+}
+.primary-color:hover {
+  text-decoration-line: none;
+  color: rgb(163, 98, 13);
+  font-weight: 600;
+}
+
+.primary-colorBrand {
+  color: rgb(204, 142, 60);
+  border-top: 1px solid tan;
+  border-bottom: 1px solid tan;
+  padding: 8px;
+}
+
+.primary-colorBrand:hover {
+  border-left: 1px solid tan;
+  border-right: 1px solid tan;
+  color: white;
+}
+
+.primary-colorBtn {
+  background: tan;
+  color: black;
+}
+.primary-colorBtn:hover {
+  opacity: 0.9;
+  color: white;
+}
+
+.table {
+  background: rgb(255, 254, 254);
+}
+thead {
+  color: rgb(204, 152, 83);
+}
+
+.card-background {
+  box-shadow: 0 0 1px tan inset;
+  background: rgb(255, 254, 254);
+}
+
+.profile-head {
+  background: tan;
+}
+
+.profile-about {
+  background: rgb(255, 254, 254);
+  border-color: rgb(248, 222, 202);
+}
+
+.profile-creds {
+  background: rgb(255, 254, 254);
+  border-color: rgb(238, 222, 202);
+}
+
+#comment-body {
+  background: tan;
 }
